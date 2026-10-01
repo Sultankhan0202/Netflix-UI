@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StreamFlix | Netflix Collection</title>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+
+    <header class="navbar" id="navbar">
+
+        <div class="nav-left">
+
+            <div class="logo">
+                STREAM<span>FLIX</span>
+            </div>
+
+            <nav class="desktop-nav">
+
+                <a href="#home">Home</a>
+
+                <a href="#trending">
+                    Trending
+                </a>
+
+                <a href="#originals">
+                    Originals
+                </a>
+
+                <a href="#indian">
+                    Indian
+                </a>
+
+                <a href="#korean">
+                    Korean
+                </a>
+
+                <a href="#anime">
+                    Anime
+                </a>
+
+                <a href="#mylist">
+                    My List
+                </a>
+
+            </nav>
+
+        </div>
+
+
+        <div class="nav-right">
+
+            <button class="nav-icon" id="searchButton" title="Search">
+                <i class="bi bi-search"></i>
+            </button>
+
+
+            <button class="nav-icon" id="notificationButton" title="Notifications">
+                <i class="bi bi-bell"></i>
+            </button>
+
+
+            <div class="profile">
+
+                <div class="profile-avatar">
+                    A
+                </div>
+
+                <i class="bi bi-chevron-down"></i>
+
+            </div>
+
+
+            <button class="mobile-menu-button" id="mobileMenuButton">
+                <i class="bi bi-list"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#home">Home</a>
+
+        <a href="#trending">
+            Trending
+        </a>
+
+        <a href="#originals">
+            Originals
+        </a>
+
+        <a href="#indian">
+            Indian
+        </a>
+
+        <a href="#korean">
+            Korean
+        </a>
+
+        <a href="#anime">
+            Anime
+        </a>
+
+        <a href="#mylist">
+            My List
+        </a>
+
+    </div>
+
+
+
+
+    <div class="search-box" id="searchBox">
+
+        <div class="search-inner">
+
+            <input type="text" id="searchInput" placeholder="Search Netflix shows..." autocomplete="off">
+
+            <button id="closeSearch">
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <section class="hero" id="home">
+
+        <!-- Stranger Things Thumbnail -->
+        <img src="stranger-thingss.jpg" alt="Stranger Things" class="hero-image">
+
+        <!-- Dark overlay -->
+        <div class="hero-overlay"></div>
+
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+
+            <div class="original-badge">
+                <i class="bi bi-play-fill"></i>
+                NETFLIX ORIGINAL
+            </div>
+
+
+            <h1>
+                STRANGER<br>
+                THINGS
+            </h1>
+
+
+            <div class="hero-meta">
+
+                <span class="match">
+                    98% Match
+                </span>
+
+                <span>
+                    2025
+                </span>
+
+                <span class="age">
+                    16+
+                </span>
+
+                <span>
+                    5 Seasons
+                </span>
+
+                <span>
+                    4K
+                </span>
+
+            </div>
+
+
+            <p>
+                When a young boy vanishes, a small town uncovers
+                a mystery involving secret experiments, terrifying
+                supernatural forces and one strange little girl.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <button class="play-button" id="heroPlay">
+                    <i class="bi bi-play-fill"></i>
+                    Play
+                </button>
+
+
+                <button class="info-button" id="heroInfo">
+                    <i class="bi bi-info-circle"></i>
+                    More Info
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Main Stranger Things image -->
+    <div class="hero-image"></div>
+
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-content">
+
+        <div class="original-badge">
+
+            <i class="bi bi-play-fill"></i>
+
+            NETFLIX ORIGINAL
+
+        </div>
+
+
+        <h1>
+            STRANGER<br>
+            THINGS
+        </h1>
+
+
+        <div class="hero-meta">
+
+            <span class="match">
+                98% Match
+            </span>
+
+            <span>
+                2025
+            </span>
+
+            <span class="age">
+                16+
+            </span>
+
+            <span>
+                5 Seasons
+            </span>
+
+            <span>
+                4K
+            </span>
+
+        </div>
+
+
+        <p>
+
+            When a young boy vanishes, a small town uncovers
+            a mystery involving secret experiments, terrifying
+            supernatural forces and one strange little girl.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <button class="play-button" id="heroPlay">
+
+                <i class="bi bi-play-fill"></i>
+
+                Play
+
+            </button>
+
+
+            <button class="info-button" id="heroInfo">
+
+                <i class="bi bi-info-circle"></i>
+
+                More Info
+
+            </button>
+
+        </div>
+
+    </div>
+
+    </section>
+
+
+
+
+    <div class="loading" id="loading">
+
+        <div class="loader"></div>
+
+        <p>
+            Loading Netflix catalog...
+        </p>
+
+    </div>
+
+
+
+
+    <section class="section search-results hidden" id="searchResults">
+
+        <div class="section-title">
+
+            <h2>
+                Search Results
+            </h2>
+
+            <span id="resultCount"></span>
+
+        </div>
+
+
+        <div class="movie-grid" id="searchGrid"></div>
+
+    </section>
+
+
+
+   
+
+    <section class="section" id="trending">
+
+        <div class="section-title">
+
+            <h2>
+                Trending on Netflix
+            </h2>
+
+            <div class="controls">
+
+                <button class="scroll-left" data-target="trendingRow">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+
+                <button class="scroll-right" data-target="trendingRow">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="movie-row" id="trendingRow"></div>
+
+    </section>
+
+
+
+
+    <section class="section" id="originals">
+
+        <div class="section-title">
+
+            <h2>
+                Netflix Originals
+            </h2>
+
+            <div class="controls">
+
+                <button class="scroll-left" data-target="originalsRow">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+
+                <button class="scroll-right" data-target="originalsRow">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="movie-row" id="originalsRow"></div>
+
+    </section>
+
+
+
+    <section class="section" id="indian">
+
+        <div class="section-title">
+
+            <h2>
+                Indian Netflix
+            </h2>
+
+            <div class="controls">
+
+                <button class="scroll-left" data-target="indianRow">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+
+                <button class="scroll-right" data-target="indianRow">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="movie-row" id="indianRow"></div>
+
+    </section>
+
+
+
+
+    <section class="section" id="korean">
+
+        <div class="section-title">
+
+            <h2>
+                Korean Netflix
+            </h2>
+
+            <div class="controls">
+
+                <button class="scroll-left" data-target="koreanRow">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+
+                <button class="scroll-right" data-target="koreanRow">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="movie-row" id="koreanRow"></div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     ACTION
+===================================================== -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>
+                Action & Thriller
+            </h2>
+
+        </div>
+
+
+        <div class="movie-row" id="actionRow"></div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     SCI-FI
+===================================================== -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>
+                Sci-Fi & Fantasy
+            </h2>
+
+        </div>
+
+
+        <div class="movie-row" id="scifiRow"></div>
+
+    </section>
+
+
+
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>
+                Romance & Comedy
+            </h2>
+
+        </div>
+
+
+        <div class="movie-row" id="comedyRow"></div>
+
+    </section>
+
+
+
+
+    <section class="section" id="anime">
+
+        <div class="section-title">
+
+            <h2>
+                Netflix Anime
+            </h2>
+
+        </div>
+
+
+        <div class="movie-row" id="animeRow"></div>
+
+    </section>
+
+    <section class="section" id="mylist">
+
+        <div class="section-title">
+
+            <h2>
+                My List
+            </h2>
+
+        </div>
+
+
+        <div class="movie-grid" id="myListGrid"></div>
+
+
+        <div class="empty-list" id="emptyList">
+
+            <i class="bi bi-bookmark"></i>
+
+            <h3>
+                Your list is empty
+            </h3>
+
+            <p>
+                Add Netflix shows to watch them later.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+
+    <div class="modal" id="modal">
+
+        <div class="modal-background" id="modalBackground"></div>
+
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="modalClose">
+
+                <i class="bi bi-x-lg"></i>
+
+            </button>
+
+
+            <div class="modal-image" id="modalImage"></div>
+
+
+            <div class="modal-body">
+
+                <h2 id="modalTitle">
+                    Stranger Things
+                </h2>
+
+
+                <div class="modal-meta">
+
+                    <span id="modalRating" class="green">
+                        98%
+                    </span>
+
+                    <span id="modalYear">
+                        2025
+                    </span>
+
+                    <span id="modalDuration">
+                        5 Seasons
+                    </span>
+
+                </div>
+
+
+                <p id="modalDescription">
+                    Description
+                </p>
+
+
+                <div class="modal-buttons">
+
+                    <button class="play-button" id="modalPlay">
+
+                        <i class="bi bi-play-fill"></i>
+
+                        Play
+
+                    </button>
+
+
+                    <button class="list-button" id="modalList">
+
+                        <i class="bi bi-plus-lg"></i>
+
+                        My List
+
+                    </button>
+
+                </div>
+
+
+                <div class="details">
+
+                    <p>
+
+                        <strong>
+                            Genre:
+                        </strong>
+
+                        <span id="modalGenre">
+                        </span>
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>
+                            Type:
+                        </strong>
+
+                        <span id="modalType">
+                        </span>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="toast" id="toast">
+
+        <i class="bi bi-check-circle-fill"></i>
+
+        <span id="toastText">
+            Added to My List
+        </span>
+
+    </div>
+
+
+
+
+    <footer>
+
+        <div class="footer-logo">
+            STREAM<span>FLIX</span>
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#">
+                Audio and Subtitles
+            </a>
+
+            <a href="#">
+                Help Center
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Terms of Use
+            </a>
+
+            <a href="#">
+                Cookie Preferences
+            </a>
+
+            <a href="#">
+                Contact Us
+            </a>
+
+        </div>
+
+
+        <p>
+            © 2026 StreamFlix — Educational Netflix UI Project
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
